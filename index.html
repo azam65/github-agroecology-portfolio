@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROECOLOGY & ME // WABI-SABI LOG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SVG Organic Noise (Simulates raw texture/parchment/earth) -->
+    <svg aria-hidden="true" class="wabi-grain-filter">
+        <filter id="wabi-noise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="4" stitchTiles="stitch"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </svg>
+
+    <header class="top-banner">
+        <p>ECOLOGICAL STUDY // REFLECTING THE PASSAGE OF TIME</p>
+    </header>
+
+    <main class="main-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <h1 class="brand-title">YOUR NAME</h1>
+            <nav class="directory">
+                <div class="directory-group">
+                    <span class="group-title">— INDEX</span>
+                    <ul>
+                        <li><a href="#about">ABOUT ME</a></li>
+                        <li><a href="#philosophy">MY PHILOSOPHY</a></li>
+                        <li><a href="#projects">MY PROJECTS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Workspace Content -->
+        <section class="content-area">
+            
+            <!-- About Section -->
+            <article id="about" class="content-block text-section">
+                <h2>ABOUT ME</h2>
+                <p class="body-text">An archivist and practitioner working at the intersection of soil biology and ecological design. This digital space mimics a raw field journal—tracking observation, soil transition, and lessons learned from seasonal degradation and repair.</p>
+            </article>
+
+            <!-- Philosophy Section (The Core Wabi-Sabi Manifesto) -->
+            <article id="philosophy" class="content-block hero-block">
+                <h2>MY PHILOSOPHY</h2>
+                <p class="manifesto-text">
+                    NATURE IS INHERENTLY IMPERFECT, ASYMMETRICAL, AND FLEETING. WE DO NOT BEND THE ENVIRONMENT TO FIT MAN-MADE INDUSTRIAL GEOMETRY. INSTEAD, WE OBSERVE THE NATURAL PASSAGE OF TIME, CULTIVATING AGROECOLOGICAL SYSTEMS THAT FIND STRENGTH IN ORGANIC DECAY AND RENEWAL.
+                </p>
+            </article>
+
+            <!-- Projects Grid (Simulating Weathered, Matte Cards) -->
+            <section id="projects" class="content-block">
+                <h2>MY PROJECTS</h2>
+                <div class="product-grid">
+                    
+                    <div class="product-card">
+                        <span class="product-tag">LOG 01 // MATTE</span>
+                        <h3>COMPOST MICROBIOLOGY</h3>
+                        <p class="product-desc">Observing fungal-to-bacterial successions in unmanaged organic matter layer tests.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn-action">VIEW ENTRY</a>
+                            <a href="#" class="btn-action secondary">DATA SHEETS</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <span class="product-tag">LOG 02 // RAW</span>
+                        <h3>PERENNIAL FIELD MATRIX</h3>
+                        <p class="product-desc">Evaluating root depth expansion and water retention benchmarks in seasonal zero-till soils.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn-action">VIEW ENTRY</a>
+                            <a href="#" class="btn-action notify">STATUS: UNFOLDING</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 YOUR NAME. EMBRACING IMPERMANENCE.</p>
+    </footer>
+
+</body>
+</html>
