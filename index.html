@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROECOLOGY & ME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic SVG Grain Overlay (Generates physical paper texture) -->
+    <svg aria-hidden="true" class="paper-grain-filter">
+        <filter id="paper-noise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" stitchTiles="stitch"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </svg>
+
+    <!-- Top Minimalist Banner / Context Bar -->
+    <header class="top-banner">
+        <p>PUBLIC LOG // AGROECOLOGY ARCHIVE</p>
+    </header>
+
+    <!-- Main Grid Container -->
+    <main class="main-container">
+        
+        <!-- Left Sidebar: Directory & Indexing -->
+        <aside class="sidebar">
+            <h1 class="brand-title">YOUR NAME</h1>
+            
+            <nav class="directory">
+                <div class="directory-group">
+                    <span class="group-title">— DIRECTORY</span>
+                    <ul>
+                        <li><a href="#about">ABOUT ME</a></li>
+                        <li><a href="#philosophy">MY PHILOSOPHY</a></li>
+                        <li><a href="#projects">MY PROJECTS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Right Main Content Area -->
+        <section class="content-area">
+            
+            <!-- Section 1: About Me -->
+            <article id="about" class="content-block text-section">
+                <h2>ABOUT ME</h2>
+                <p class="body-text">Enter your professional and personal background here. Keep it structured and intentional. Describe your journey into agroecology, your field background, academic roots, or the specific ecosystem challenges you are currently addressing on the ground.</p>
+            </article>
+
+            <!-- Section 2: My Philosophy -->
+            <article id="philosophy" class="content-block hero-block">
+                <h2>MY PHILOSOPHY</h2>
+                <p class="manifesto-text">
+                    WE BELIEVE THAT AGRICULTURE SHOULD REGENERATE, NOT DEPLETE. WE COMPOSE SYSTEMS AROUND NATURAL PRINCIPLES—ELEVATING COMPLEXITY, REJECTING INDUSTRIAL UTILITY, AND SYNTHESIZING AN ECOLOGICAL BALANCE DESIGNED TO ENDURE.
+                </p>
+            </article>
+
+            <!-- Section 3: My Projects (Simulating Tactile Product Slips) -->
+            <section id="projects" class="content-block">
+                <h2>MY PROJECTS</h2>
+                <div class="product-grid">
+                    
+                    <div class="product-card">
+                        <span class="product-tag">PROJECT 01</span>
+                        <h3>LIVING SOIL INTEGRATION</h3>
+                        <p class="product-desc">Composting protocols targeting microbial diversity and carbon sequestration. Active trial across 55 hectares.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn-action">READ LOG</a>
+                            <a href="#" class="btn-action secondary">VIEW DATA</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <span class="product-tag">PROJECT 02</span>
+                        <h3>POLYCULTURE SYSTEM 12</h3>
+                        <p class="product-desc">Companion planting metrics exploring intercropping synergies between deep-root perennial grains.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn-action">READ LOG</a>
+                            <a href="#" class="btn-action notify">STATUS: ACTIVE</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© 2026 YOUR NAME. ALL DATA OPEN-SOURCE.</p>
+    </footer>
+
+</body>
+</html>
